@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/aedafb5f19.js" crossorigin="anonymous"></script>
+    <title>Sabor Celestial</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins';
+      }
+
+      header {
+        height: 20vh;
+        /* position: sticky; */
+        /* top: 0; */
+        background-color: #ebdbb2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo {
+        height: 100%;
+      }
+
+      header .logo img {
+        height: 100%;
+        width: 120px;
+      }
+
+      header nav ul {
+        list-style: none;
+      }
+
+      header nav ul li {
+        display: inline-block;
+        margin-right: 30px;
+      }
+
+      header nav ul li a {
+        text-decoration: none;
+        color: #282828;
+        font-size: 1.5rem;
+      }
+
+      .flavors{
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        font-size: 75px;
+        padding: 70px 0;
+      }
+
+      .section-flavors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .flavor-cake p {
+        text-align: center;
+      }
+
+      .decorations{
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        font-size: 75px;
+        padding: 70px 0;
+      }
+
+      .section-decorations {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .decoration-cake p {
+        text-align: center;
+      }
+
+      .decoration-img {
+        width: 400px;
+      }
+
+      .form-title {
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        font-size: 75px;
+        padding: 70px 0;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      form label {
+        font-family: 'Poppins';
+        /* text-align:left; */
+        font-size: 20px;
+        margin: 15px 0;
+      }
+
+      form .button {
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+        margin: 20px 0;
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50px;
+        background-color: #ebdbb2;
+        color: #282828;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      footer p i {
+        padding: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/logo.png" alt="Sabor Celestial" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#part-flavor">SABORES</a></li>
+          <li><a href="#part-decoration">ADORNOS</a></li>
+          <li><a href="#part-form">PEDIDOS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p class="flavors" id="part-flavor">SABORES</p>
+    <section class="section-flavors">
+      <div class="flavor-cake">
+        <p class="flavors-title">Pastel de Chocolate</p>
+        <img src="./img/chocolate.jpg" alt="Pastel de Chocolate" />
+        <p class="flavors-price">S/37.00</p>
+      </div>
+      <div class="flavor-cake">
+        <p class="flavors-title">Pastel Red velvet</p>
+        <img src="./img/redVelvet.jpg" alt="Pastel de Velvet" />
+        <p class="flavors-price">S/45.00</p>
+      </div>
+      <div class="flavor-cake">
+        <p class="flavors-title">Pastel de Limón</p>
+        <img src="./img/limon.jpg" alt="Pastel de Limón" />
+        <p class="flavors-price">S/37.00</p>
+      </div>
+      <div class="flavor-cake">
+        <p class="flavors-title">Pastel de Vainilla</p>
+        <img src="./img/vanilla.jpg" alt="Pastel de Vainilla" />
+        <p class="flavors-price">S/40.00</p>
+      </div>
+      <div class="flavor-cake">
+        <p class="flavors-title">Pastel de Zanahoria</p>
+        <img src="./img/zanahoria.jpg" alt="Pastel de Zanahoria" />
+        <p class="flavors-price">S/35.00</p>
+      </div>
+      <div class="flavor-cake">
+        <p class="flavors-title">Pastel de Tres Leches</p>
+        <img src="./img/tresLeches.jpg" alt="Pastel de Tres Leches" />
+        <p class="flavors-price">S/45.00</p>
+      </div>
+    </section>
+    <p class="decorations" id="part-decoration">DECORACIONES</p>
+    <section class="section-decorations">
+      <div class="decoration-cake">
+        <p class="decoration-title">Claveles de chocolate</p>
+        <img src="./img/clavel.jpg" class="decoration-img" alt="clavel de chocolate" />
+        <p class="decoration-price">S/10.00</p>
+      </div>
+      <div class="decoration-cake">
+        <p class="decoration-title">Espirales de chocolate</p>
+        <img src="./img/espiral.jpg" class="decoration-img" alt="Espirales" />
+        <p class="decoration-price">S/7.00</p>
+      </div>
+      <div class="decoration-cake">
+        <p class="decoration-title">Flores de chocolate</p>
+        <img src="./img/chocolateFlower.jpg" class="decoration-img" alt="Flores de chocolate" />
+        <p class="decoration-price">S/15.00</p>
+      </div>
+      <div class="decoration-cake">
+        <p class="decoration-title">Mesita Comestible</p>
+        <img src="./img/mesita.jpg" class="decoration-img" alt="Mesita Comestible" />
+        <p class="decoration-price">S/20.00</p>
+      </div>
+    </section>
+
+    <p class="form-title" id="part-form">HACER PEDIDO</p>
+    <form action="">
+      <label for="form-names">Nombres:</label>
+      <input type="text" id="form-names" />
+      <label for="form-lastnames">Apellidos:</label>
+      <input type="text" id="form-lastnames" />
+      <label for="form-number">Teléfono:</label>
+      <input type="text" id="form-number" />
+      <label for="form-email">Correo Electrónico:</label>
+      <input type="email" id="form-email" />
+      <label for="form-description">Descripción:</label>
+      <textarea id="form-description" cols="30" rows="10"></textarea>
+      <input type="submit" value="Realizar" class="button">
+    </form>
+    <footer>
+      <p><i class="fa-solid fa-location-dot"></i>Calle, Enrique León García 392, La Victoria</p>
+      <p><i class="fa-solid fa-phone"></i>954789542</p>
+      <p><i class="fa-solid fa-clock"></i>8:00am - 8:00pm</p>
+    </footer>
+  </body>
+</html>
